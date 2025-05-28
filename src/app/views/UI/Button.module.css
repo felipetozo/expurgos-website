@@ -1,0 +1,93 @@
+.button {
+    border-radius: 0.4rem;
+    font-weight: 500;
+    font-family: var(--font-spaceGrotesk);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: none;
+    gap: 0.5rem;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.button.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Variants */
+.primary {
+    background-color: rgba(var(--color-lightGreen), 0.8);
+    border: 1px solid rgba(var(--color-lightGreen), 0.9);
+    color: rgba(var(--color-almostWhite), 0.8);
+}
+
+.primary:hover:not(disabled) {
+    background-color: rgba(var(--color-lightGreen), 1);
+    border: 1px solid rgba(var(--color-lightGreen), 1);
+    color: rgba(var(--color-almostWhite), 1);
+}
+
+.primary:hover span {
+    animation: btnAnimation 0.2s ease-in-out forwards;
+}
+
+/* Sizes */
+.small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.medium {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.large {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.fullWidth {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* ======================================== */
+/* Animação dos botões   */
+/* ======================================== */
+
+@keyframes btnAnimation {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+        color: rgba(var(--color-almostWhite), 0.8);
+    }
+}

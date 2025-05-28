@@ -1,0 +1,73 @@
+/* ====================================================== */
+/* Estilos para Navigator                                 */
+/* ====================================================== */
+
+.NavigatorSection {
+    width: 100%;
+    background-color: rgba(var(--color-almostWhite), 0.90);
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    z-index: 9999;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+}
+
+.NavigatorWrapper {
+    width: 83.33%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1600px;
+    gap: 10rem;
+}
+
+.NavigatorWrapper a {
+    width: 100%;
+    max-width: 15rem;
+    font-family: var(--font-Exo);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.NavigatorWrapper ul {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavigatorWrapper ul li {
+    color: rgba(var(--color-almostBlack), 0.75);
+    width: 100%;
+    text-align: center;
+}
+
+.NavigatorWrapper ul li:hover a {
+    text-decoration: underline;
+}
+
+.NavigatorSection button {
+    display: none;
+    width: 100%;
+    max-width: 15rem;
+    margin: 0;
+}
+
+@media (min-width:1200px) {
+    .NavigatorWrapper ul {
+        display: flex;
+    }
+
+    .NavigatorSection button {
+        display: block;
+    }
+}

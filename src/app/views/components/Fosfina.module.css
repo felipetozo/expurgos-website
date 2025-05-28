@@ -1,0 +1,61 @@
+.FosfinaSection {
+    width: 100%;
+    padding: 10rem 0;
+    background-color: rgba(var(--color-lightBeige), 1);
+}
+
+.FosfinaWrapper {
+    width: 83.33%;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.FosfinaContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.FosfinaItems {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+}
+
+.FosfinaItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.FosfinaItem h3 {
+    color: rgba(var(--color-lightGreen), 1)
+}
+
+.FosfinaItem h1 {
+    color: rgba(var(--color-chocolateBrown), 1);
+    font-weight: 700;
+}
+
+.FosfinaItem p {
+    color: rgba(var(--color-almostBlack), 0.65)
+}
+
+@media (min-width:1200px) {
+
+    .FosfinaItems,
+    .FosfinaContainer {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}
