@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navigator from "@/app/views/components/Navigator";
 import Hero from "@/app/views/components/Hero";
 import Fosfina from "@/app/views/components/Fosfina";
