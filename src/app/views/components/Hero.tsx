@@ -15,6 +15,7 @@ function Hero() {
                         priority
                         className="object-cover object-center"
                     />
+
                     <div className="absolute inset-0 bg-black/50 z-2"></div>
                 </div>
 
