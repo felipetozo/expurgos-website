@@ -10,7 +10,7 @@ function Navigator() {
                 <div className={styles.NavigatorWrapper}>
                     <Link href="/">
                         <Image
-                            src="/expurgosLogotipo-color.svg"
+                            src="/expurgosLogotipo-White.svg"
                             alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
                             width={200}
                             height={35}

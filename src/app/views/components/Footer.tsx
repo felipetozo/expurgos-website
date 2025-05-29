@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import { BsWhatsapp } from "react-icons/bs";
+import { IoMailOutline } from "react-icons/io5";
 
 function Footer() {
     return (
@@ -9,7 +11,7 @@ function Footer() {
                 <div className={styles.FooterWrapper}>
                     <Link href="/">
                         <Image
-                            src="/expurgosLogotipo-white.svg"
+                            src="/expurgosLogotipo-White.svg"
                             alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
                             width={200}
                             height={35}
@@ -21,24 +23,14 @@ function Footer() {
                                 Tatiana Thomaz
                             </p>
                             <span>
-                                <Link href="tel:5545998451463">
-                                    <Image
-                                        src="/globe.svg"
-                                        alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
-                                        width={16}
-                                        height={16}
-                                    />
+                                <Link href="https://wa.me/5545998451463">
+                                    <BsWhatsapp size={20} />
                                     (41) 99845 1463
                                 </Link>
                             </span>
                             <span>
                                 <Link href="mailto:tatiana.thomaz@expurgos.com">
-                                    <Image
-                                        src="/globe.svg"
-                                        alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
-                                        width={16}
-                                        height={16}
-                                    />
+                                    <IoMailOutline size={20} />
                                     tatiana.thomaz@expurgos.com
                                 </Link>
                             </span>
@@ -48,24 +40,14 @@ function Footer() {
                                 Rafael Reis
                             </p>
                             <span>
-                                <Link href="tel:5545998451463">
-                                    <Image
-                                        src="/globe.svg"
-                                        alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
-                                        width={16}
-                                        height={16}
-                                    />
-                                    (41) 99845 1463
+                                <Link href="https://wa.me/5545998492180">
+                                    <BsWhatsapp size={20} />
+                                    (45) 99849 2180
                                 </Link>
                             </span>
                             <span>
                                 <Link href="mailto:rafael.reis@expurgos.com">
-                                    <Image
-                                        src="/globe.svg"
-                                        alt="Expurgos.com: Parceria e inovação em busca da evolução constante do agro."
-                                        width={16}
-                                        height={16}
-                                    />
+                                    <IoMailOutline size={20} />
                                     rafael.reis@expurgos.com
                                 </Link>
                             </span>

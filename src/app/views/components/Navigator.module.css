@@ -29,6 +29,10 @@
     gap: 10rem;
 }
 
+.NavigatorWrapper img {
+    filter: brightness(35%);
+}
+
 .NavigatorWrapper a {
     width: 100%;
     max-width: 15rem;
