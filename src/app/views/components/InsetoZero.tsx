@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './InsetoZero.module.css';
+import { RiShieldCheckLine } from "react-icons/ri";
 
 function InsetoZero() {
     return (
@@ -18,22 +19,32 @@ function InsetoZero() {
                     </div>
                     <div className={styles.InsetoZeroGrid}>
                         <div className={styles.InsetoZeroHighlights}>
-                            Profilaxias de Armazém
+                            <span><RiShieldCheckLine /></span>
+                            <p>Profilaxias de Armazém</p>
                         </div>
                         <div className={styles.InsetoZeroHighlights}>
-                            Inspeções Sequenciais
+                            <span><RiShieldCheckLine /></span>
+                            <p>Inspeções Sequenciais</p>
                         </div>
                         <div className={styles.InsetoZeroHighlights}>
-                            Verificação de Temperatura
+                            <span><RiShieldCheckLine /></span>
+                            <p>Verificação de Temperatura</p>
                         </div>
                         <div className={styles.InsetoZeroHighlights}>
-                            Amostragens em Profundidade
+                            <span><RiShieldCheckLine /></span>
+                            <p>Amostragens em Profundidade</p>
                         </div>
                         <div className={styles.InsetoZeroHighlights}>
-                            Treinamentos
+                            <span><RiShieldCheckLine /></span>
+                            <p>Relatórios Técnicos</p>
                         </div>
                         <div className={styles.InsetoZeroHighlights}>
-                            Relatórios Técnicos
+                            <span><RiShieldCheckLine /></span>
+                            <p>Análises de Qualidade</p>
+                        </div>
+                        <div className={styles.InsetoZeroHighlights}>
+                            <span><RiShieldCheckLine /></span>
+                            <p>Treinamentos</p>
                         </div>
                     </div>
                     <div className={styles.InsetoZeroContainer}>
