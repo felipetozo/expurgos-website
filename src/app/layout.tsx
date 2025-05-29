@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Exo, Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Exo({
   variable: "--font-Exo",
@@ -28,8 +28,8 @@ function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Analytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );
