@@ -56,7 +56,7 @@ function Footer() {
                 </div>
                 <div className={styles.FooterCNPJ}>
                     <p>
-                        Copyright ® 2025 - Expurgos.com
+                        Copyright ® {new Date().getFullYear()} - Expurgos.com
                     </p>
                 </div>
             </section>
